@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google API Translator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>  
+        <input class="btn" id="btnImgEn" type="button" onclick="setEn()">        
+        <input class="btn" id="btnImgEs" type="button" onclick="setEs()">
+        <input class="btn" id="btnImgPl" type="button" onclick="setPl()">
+        <input class="btn" id="btnImgDe" type="button" onclick="setDe()"><br>
+    
+                 <select class="custom-select" id="inputLang">
+                    <option value="AF">Afrikaans</option>
+                    <option value="SQ">Albanian</option>
+                    <option value="AR">Arabic</option>
+                    <option value="AZ">Azerbaijani</option>
+                    <option value="EU">Basque</option>
+                    <option value="BE">Belarusian</option>
+                    <option value="BG">Bulgarian</option>
+                    <option value="zh-TW">Chinese</option>
+                    <option value="HR">Croatian</option>
+                    <option value="CS">Czech</option>
+                    <option value="DA">Danish</option>
+                    <option value="ZH">Chinese (Mandarin)</option>
+                    <option value="CS">Czech</option>
+                    <option value="DA">Danish</option>
+                    <option value="NL">Dutch</option>
+                    <option value="EN" selected = "selected">English</option>
+                    <option value="ET">Estonian</option>
+                    <option value="FR">French</option>
+                    <option value="KA">Georgian</option>
+                    <option value="DE">German</option>
+                    <option value="HI">Hindi</option>
+                    <option value="HU">Hungarian</option>
+                    <option value="IT">Italian</option>
+                    <option value="JA">Japanese</option>
+                    <option value="LA">Latin</option>
+                    <option value="LV">Latvian</option>
+                    <option value="LT">Lithuanian</option>
+                    <option value="NO">Norwegian</option>
+                    <option value="PL">Polish</option>
+                    <option value="PT">Portuguese</option>
+                    <option value="RO">Romanian</option>
+                    <option value="RU">Russian</option>
+                    <option value="SR">Serbian</option>
+                    <option value="SK">Slovak</option>
+                    <option value="SL">Slovenian</option>
+                    <option value="ES">Spanish</option>
+                    <option value="SV">Swedish</option>
+                    <option value="TR">Turkish</option>
+                    <option value="UK">Ukranian</option>
+                    <option value="VI">Vietnamese</option>
+                    <option value="CY">Welsh</option>
+                </select>
+
+                <input type="button" class="btn" id="btnSwap" onClick="swapLang('select[id=\'inputLang\']', 'select[id=\'outputLang\']')"value="Swap">
+                
+                <select class="custom-select" id="outputLang">
+                        <option value="AF">Afrikaans</option>
+                        <option value="SQ">Albanian</option>
+                        <option value="AR">Arabic</option>
+                        <option value="AZ">Azerbaijani</option>
+                        <option value="EU">Basque</option>
+                        <option value="BE">Belarusian</option>
+                        <option value="BG">Bulgarian</option>
+                        <option value="zh-TW">Chinese</option>
+                        <option value="HR">Croatian</option>
+                        <option value="CS">Czech</option>
+                        <option value="DA">Danish</option>
+                        <option value="ZH">Chinese (Mandarin)</option>
+                        <option value="CS">Czech</option>
+                        <option value="DA">Danish</option>
+                        <option value="NL">Dutch</option>
+                        <option value="EN">English</option>
+                        <option value="ET">Estonian</option>
+                        <option value="FR">French</option>
+                        <option value="KA">Georgian</option>
+                        <option value="DE" selected="selected">German</option>
+                        <option value="HI">Hindi</option>
+                        <option value="HU">Hungarian</option>
+                        <option value="IT">Italian</option>
+                        <option value="JA">Japanese</option>
+                        <option value="LA">Latin</option>
+                        <option value="LV">Latvian</option>
+                        <option value="LT">Lithuanian</option>
+                        <option value="NO">Norwegian</option>
+                        <option value="PL">Polish</option>
+                        <option value="PT">Portuguese</option>
+                        <option value="RO">Romanian</option>
+                        <option value="RU">Russian</option>
+                        <option value="SR">Serbian</option>
+                        <option value="SK">Slovak</option>
+                        <option value="SL">Slovenian</option>
+                        <option value="ES">Spanish</option>
+                        <option value="SV">Swedish</option>
+                        <option value="TR">Turkish</option>
+                        <option value="UK">Ukranian</option>
+                        <option value="VI">Vietnamese</option>
+                        <option value="CY">Welsh</option>
+                </select><br>
+
+                <textarea class="textArea" id="inputText" rows="15" cols="44" placeholder=" Welcome!"></textarea><br>     
+                <input class="btn"  type="button" id="btnTranslate" value="Translate"><br>
+                <textarea class="textArea" id="outputText" rows="15" cols="44" readonly wrap="soft"></textarea> 
+</body>
+</html>

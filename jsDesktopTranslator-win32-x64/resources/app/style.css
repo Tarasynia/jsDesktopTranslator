@@ -1,0 +1,61 @@
+    html{
+        margin: 0;
+    }
+    body{
+        background-color: rgb(107, 255, 166);
+        margin: 10px;
+    }
+.textArea{
+    background-color: rgb(240, 255, 246);
+}
+.btn{
+    padding: 13px 30px 13px 30px;
+    border: none;
+}
+#flags{
+    margin: 0 0 10px 0;
+}
+#btnImgEn{
+background-image: url('./icons/iconfinder_United-Kingdom_92403.png');
+background-repeat:no-repeat;
+background-position: center;
+margin: 0 20px 0 0;
+}
+#btnImgEs{
+background-image: url('./icons/iconfinder_Spain_92357.png');
+background-repeat:no-repeat;
+background-position: center;
+margin: 0 20px 0 20px;
+}
+#btnImgPl{
+background-image: url('./icons/iconfinder_Poland_92289.png');
+background-repeat:no-repeat;
+background-position: center;
+margin: 0 20px 0 20px;
+}
+#btnImgDe{
+background-image: url('./icons/iconfinder_Germany_92095.png');
+background-repeat:no-repeat;
+background-position: center;
+margin: 0 0 0 20px;
+}
+#btnSwap{
+background-color: rgb(107, 255, 166);
+font-size: 150%;
+margin: 5px 21px 5px 20px;
+cursor: pointer;
+border: black solid 1px;
+}
+#btnTranslate{
+background-color: rgb(107, 255, 166);
+font-size: 150%;
+margin: 0 0 5px 105px;
+border: black solid 1px;
+cursor: pointer;
+}
+.custom-select{
+    width:100px;
+    position: relative;
+  font-family: Arial;
+  padding-left: 20px
+}
